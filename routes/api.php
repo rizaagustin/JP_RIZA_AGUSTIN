@@ -19,4 +19,4 @@ use App\Http\Controllers\Api\RsCovidController;
 // });
 
 Route::apiResource('/data',RsCovidController::class);
-// Route::apiResource('/filter',RsCovidController::class,'filterApi');
+Route::get('/data-rs', [RsCovidController::class,'filter']);

@@ -18,6 +18,7 @@ use App\Http\Controllers\InfoController;/*
 // });
 
 Route::get('/', [InfoController::class,'index']);
+Route::get('/data', [InfoController::class,'filter']);
 
-Route::get('/api/fiterapi', [InfoController::class,'filterApi']);
+
 
