@@ -69,7 +69,7 @@ class InfoController extends Controller
         foreach($rs_covid as $data_rs_covid){
 
 
-            if (stripos($request->kelurahan,$data_rs_covid['kelurahan']) !== false || stripos($request->kecamatan,$data_rs_covid['kecamatan']) !== false || stripos($request->kota_madya,$data_rs_covid['kota_madya']) !== false) {
+            if (stripos($request->kelurahan,$data_rs_covid['kelurahan']) !== false && stripos($request->kecamatan,$data_rs_covid['kecamatan']) !== false && stripos($request->kota_madya,$data_rs_covid['kota_madya']) !== false) {
 
             }else{
                 continue;
